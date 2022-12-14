@@ -1,4 +1,5 @@
-    "env": {
+{
+  "env": {
         "es2021": true,
         "node": true
     },
@@ -38,4 +39,7 @@
             }
         ]
     },
+    "no-underscore-dangle": [
+      "error",
+      { "allow": ["_id", "req.user._id", "._id"] }]
 }
