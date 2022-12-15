@@ -45,6 +45,7 @@ const findByIdAndUpdateUser = (
   updateObject: Record<string, string>,
   options = {
     new: true,
+    runValidators: true,
   },
 ) => User.findByIdAndUpdate(id, updateObject, options)
   .then((user) => {
