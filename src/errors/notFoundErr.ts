@@ -1,7 +1,7 @@
 import { ICustomError } from './types';
 import { NOT_FOUND_ERROR_CODE } from './constants';
 
-export class NotFoundError extends Error implements ICustomError {
+class NotFoundError extends Error implements ICustomError {
   statusCode: number;
 
   constructor(message: string) {
