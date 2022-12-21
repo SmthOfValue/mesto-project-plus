@@ -9,7 +9,6 @@ export const getCards = (req: Request, res: Response, next: NextFunction) => Car
   .then((cards) => res.status(200).send({ data: cards }))
   .catch(next);
 
-// eslint-disable-next-line consistent-return
 export const deleteCardById = async (req: Request, res: Response, next: NextFunction) => {
   const foundCard = await Card.findById(req.params.cardId);
   try {

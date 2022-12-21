@@ -2,6 +2,7 @@ import { Request, Response, NextFunction } from 'express';
 import { Schema } from 'mongoose';
 import bcrypt from 'bcryptjs';
 import jwt from 'jsonwebtoken';
+// import { Request } from '../@types/express/index';
 import User from '../models/user';
 import NotFoundError from '../errors/notFoundErr';
 import BadRequestError from '../errors/badRequestErr';
