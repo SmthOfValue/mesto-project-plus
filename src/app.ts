@@ -31,7 +31,7 @@ app.use(auth);
 
 app.use('/users', usersRouter);
 app.use('/cards', cardsRouter);
-// eslint-disable-next-line no-unused-vars
+
 app.get('*', (req: Request, res: Response) => {
   throw new NotFoundError('Запрашиваемая страница не существует');
 });
